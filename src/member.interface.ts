@@ -5,6 +5,20 @@ export enum Gender {
   FEMALE = 2,
 }
 
+export class GenderUtils {
+  static toString(gender: Gender) {
+    switch (gender) {
+      case Gender.UNKNOWN:
+        return "Unknown";
+      case Gender.MALE:
+        return "Male";
+      case Gender.FEMALE:
+        return "Female";
+    }
+  }
+  static options: Gender[] = Object.values(Gender).filter((value) => typeof value === "number" && value !== Gender.UNKNOWN);
+}
+
 export const MemberSchema = z.object({
   id: z.number(),
   phone: z.string(),
