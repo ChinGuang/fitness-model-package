@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "ES2024",
+
+    "declaration": true,
+
+    "strict": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+  },
+  "include": ["src/**/*"],
+}
